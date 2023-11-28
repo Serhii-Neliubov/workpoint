@@ -65,7 +65,7 @@ export default function Home() {
         </div>
         <div className="flex gap-[24px]">
           <div className="flex flex-col gap-[24px]">
-            <div className="hover:border-[#FFCA1D] hover:border-[1px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
+            <div className="hover:border-[#FFCA1D] hover:border-[3px] hover:p-[38px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
               <Image
                 alt="logo"
                 src="shape-yellow.svg"
@@ -84,7 +84,7 @@ export default function Home() {
                 />
               </Link>
             </div>
-            <div className="hover:border-[#FFCA1D] hover:border-[1px] w-[384px] p-[40px] border rounded-[16px] border-[#DCDCE2]">
+            <div className="hover:border-[#FFCA1D] hover:border-[3px] hover:p-[38px] w-[384px] p-[40px] border rounded-[16px] border-[#DCDCE2]">
               <Image
                 alt="logo"
                 src="shape-red.svg"
@@ -107,7 +107,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col gap-[24px]">
-            <div className="hover:border-[#FFCA1D] hover:border-[1px] w-[384px] p-[40px] border rounded-[16px] border-[#DCDCE2]">
+            <div className="hover:border-[#FFCA1D] hover:border-[3px] hover:p-[38px] w-[384px] p-[40px] border rounded-[16px] border-[#DCDCE2]">
               <Image
                 alt="logo"
                 src="shape-green.svg"
@@ -128,7 +128,7 @@ export default function Home() {
                 />
               </Link>
             </div>
-            <div className="hover:border-[#FFCA1D] hover:border-[1px] w-[384px] p-[40px] border rounded-[16px] border-[#DCDCE2]">
+            <div className="hover:border-[#FFCA1D] hover:border-[3px] hover:p-[38px] w-[384px] p-[40px] border rounded-[16px] border-[#DCDCE2]">
               <Image
                 alt="logo"
                 src="shape-purple.svg"
@@ -152,6 +152,27 @@ export default function Home() {
       </div>
       <div className="pt-[40px] pb-[40px] bg-[#F8F8F8] max-w-[1440px] mx-auto">
         <div className="max-w-[1200px] mx-auto">123</div>
+      </div>
+      <div className="pt-[80px] overflow-hidden pb-[80px] bg-black relative max-w-[1440px] max-h-[379px] mx-auto">
+        <Image
+          alt="arrow"
+          className="absolute top-0 left-0"
+          src="career.svg"
+          width={1440}
+          height={379}
+        />
+        <div className=" flex flex-col items-center relative z-20">
+          <h3 className="text-center mb-[16px] text-[56px] text-white font-bold">
+            Join our team
+          </h3>
+          <p className="text-center text-white max-w-[425px]">
+            Explore exciting opportunities to be part of a dynamic and
+            innovative team.
+          </p>
+          <button className="mt-[24px] pb-[12px] pt-[12px] pr-[24px] pl-[24px] rounded-[6px] font-semibold text-[18px] bg-[#FFCA1D]">
+            Open Positions
+          </button>
+        </div>
       </div>
       <Footer />
     </div>
