@@ -153,8 +153,33 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="pt-[40px] pb-[40px] bg-[#F8F8F8] max-w-[1440px] mx-auto">
-        <div className="max-w-[1200px] mx-auto">123</div>
+      <div className="pt-[80px] pb-[80px] bg-[#F8F8F8] max-w-[1440px] mx-auto ">
+        <div className="max-w-[1200px] mx-auto flex justify-between items-center">
+          <div className=" relative r w-[582px] h-[582px] rounded-full overflow-hidden">
+            <Image
+              alt="image"
+              src="/find-out-image.jpg"
+              width={582}
+              height={582}
+              className="absolute top-[50%] left-[50%] translate-x-[-65%] translate-y-[-50%] scale-[1.5]"
+            />
+          </div>
+          <div className="flex flex-col">
+            <div className="relative">
+              <h2 className=" after:content[''] after:absolute after:bottom-[32px] rounded-full after:left-0 after:w-[100px] after:h-[4px] after:bg-[#FFCA1D] font-semibold max-w-[375px] text-[32px] mb-[52px]">
+                Find out who we are and why you should work with us
+              </h2>
+            </div>
+
+            <p className="text-[18px] max-w-[360px] text-[#585858]">
+              We provide services with varying lengths of time, based on the
+              needs of each firm.
+            </p>
+            <button className="mt-[20px] rounded w-[95px] text-[15px] pt-[10px] pb-[10px] font-semibold bg-[#FFCA1D]">
+              Discover
+            </button>
+          </div>
+        </div>
       </div>
       <div className="max-w-[1200px] items-center pt-[80px] pb-[80px] mx-auto  flex justify-between">
         <div className="flex flex-col">
@@ -188,6 +213,27 @@ export default function Home() {
             width={270}
             height={270}
           />
+          <Image
+            alt="image"
+            src="/circle_green.svg"
+            className="absolute top-[30%] left-[74%] z-0 translate-x-[-50%] translate-y-[-50%]"
+            width={18}
+            height={18}
+          />
+          <Image
+            alt="image"
+            src="/circle_orange.svg"
+            className="absolute top-[20%] left-[15%] z-0 translate-x-[-50%] translate-y-[-50%]"
+            width={15}
+            height={15}
+          />
+          <Image
+            alt="image"
+            src="/circle_purple.svg"
+            className="absolute bottom-[7%] left-[30%] z-0 translate-x-[-50%] translate-y-[-50%]"
+            width={31}
+            height={31}
+          />
           <div className="w-[150px] h-[150px] absolute left-[160px] top-[-30px]">
             <Image
               alt="image"
@@ -213,6 +259,74 @@ export default function Home() {
                   className="absolute top-[49px] left-[-8px] z-0 "
                   width={28}
                   height={28}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="w-[112px] h-[112px] absolute left-0 top-[50%] translate-y-[-50%]">
+            <Image
+              alt="image"
+              src="/circle_yellow_big.svg"
+              className="absolute top-[50%] left-[50%] z-0 translate-x-[-50%] translate-y-[-50%]"
+              width={270}
+              height={270}
+            />
+            <Image
+              alt="image"
+              src="/circle_particle_yellow1.svg"
+              className="absolute top-[20%] left-[70%] z-0 translate-x-[-50%] translate-y-[-50%]"
+              width={9}
+              height={9}
+            />
+            <div className=" z-10 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col items-center  font-semibold">
+              <Image
+                alt="image"
+                src="/finances-icon.svg"
+                width={32}
+                height={32}
+              />
+              <div>
+                <span className="text-white relative z-10">Finances</span>
+                <Image
+                  alt="image"
+                  src="/circle_particle_yellow2.svg"
+                  className="absolute top-[31px] left-[-8px] z-0 "
+                  width={26}
+                  height={26}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="w-[123px] h-[123px] absolute right-0 top-[50%]">
+            <Image
+              alt="image"
+              src="/circle_orange_big.svg"
+              className="absolute top-[50%] left-[50%] z-0 translate-x-[-50%] translate-y-[-50%]"
+              width={270}
+              height={270}
+            />
+            <Image
+              alt="image"
+              src="/circle_particle_orange1.svg"
+              className="absolute top-[20%] left-[70%] z-0 translate-x-[-50%] translate-y-[-50%]"
+              width={11}
+              height={11}
+            />
+            <div className=" z-10 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col items-center  font-semibold">
+              <Image
+                alt="image"
+                src="/covid-van-icon.svg"
+                width={28}
+                height={28}
+              />
+              <div>
+                <span className="text-white relative z-10">Logistic</span>
+                <Image
+                  alt="image"
+                  src="/circle_particle_orange2.svg"
+                  className="absolute top-[28px] left-[-8px] z-0 "
+                  width={26}
+                  height={26}
                 />
               </div>
             </div>
