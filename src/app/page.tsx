@@ -156,7 +156,69 @@ export default function Home() {
       <div className="pt-[40px] pb-[40px] bg-[#F8F8F8] max-w-[1440px] mx-auto">
         <div className="max-w-[1200px] mx-auto">123</div>
       </div>
+      <div className="max-w-[1200px] items-center pt-[80px] pb-[80px] mx-auto  flex justify-between">
+        <div className="flex flex-col">
+          <div className="relative">
+            <h2 className=" after:content[''] after:absolute after:bottom-[32px] rounded-full after:left-0 after:w-[100px] after:h-[4px] after:bg-[#FFCA1D] font-semibold max-w-[350px] text-[32px] mb-[52px]">
+              {`We've built strong relationships in over 11 years of work`}
+            </h2>
+          </div>
 
+          <p className="text-[18px] max-w-[420px] text-[#585858]">
+            Over the last 11 years, Workpoint has aided a large number of
+            businesses – from small businesses to large corporations – in
+            becoming long-term profitable.
+          </p>
+          <button className="mt-[20px] rounded w-[116px] text-[15px] pt-[10px] pb-[10px] font-semibold bg-[#FFCA1D]">
+            Learn more
+          </button>
+        </div>
+        <div className="relative w-[420px] h-[420px]">
+          <Image
+            alt="image"
+            src="/circle-big.png"
+            className="absolute top-[50%] left-[50%] z-0 translate-x-[-50%] translate-y-[-50%]"
+            width={355}
+            height={355}
+          />
+          <Image
+            alt="image"
+            src="/circle-small.png"
+            className="absolute top-[50%] left-[50%] z-0 translate-x-[-50%] translate-y-[-50%]"
+            width={270}
+            height={270}
+          />
+          <div className="w-[150px] h-[150px] absolute left-[160px] top-[-30px]">
+            <Image
+              alt="image"
+              src="/ellipse_blue_big.svg"
+              className="absolute top-[50%] left-[50%] z-0 translate-x-[-50%] translate-y-[-50%]"
+              width={270}
+              height={270}
+            />
+            <Image
+              alt="image"
+              src="/ellipse_blue_particle1.svg"
+              className="absolute top-[20%] left-[70%] z-0 translate-x-[-50%] translate-y-[-50%]"
+              width={12}
+              height={12}
+            />
+            <div className=" z-10 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col items-center  font-semibold">
+              <Image alt="image" src="/heart-icon.svg" width={50} height={50} />
+              <div>
+                <span className="text-white relative z-10">Healthcare</span>
+                <Image
+                  alt="image"
+                  src="/ellipse_blue_particle2.svg"
+                  className="absolute top-[49px] left-[-8px] z-0 "
+                  width={28}
+                  height={28}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="relative max-w-[1440px] pt-[146px] pb-[146px]">
         <Image
           alt="image"
