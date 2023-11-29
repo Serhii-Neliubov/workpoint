@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div>
       {/* HERO PAGE */}
-      <div className="relative max-w-[1440px] pt-[146px] pb-[146px]">
+      <div className=" mx-auto relative max-w-[1440px] pt-[146px] pb-[146px]">
         <Image
           alt="image"
           src="/hero-bg.jpg"
@@ -177,7 +177,7 @@ export default function Home() {
               height={680}
               className="absolute top-0 left-0"
             />
-            <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] overflow-hidden rounded-full border-[2px] border-black w-[582px] h-[582px]">
+            <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] overflow-hidden rounded-full  w-[582px] h-[582px]">
               <Image
                 alt="image"
                 src="/find-out-image.jpg"
@@ -358,7 +358,7 @@ export default function Home() {
         </div>
       </div>
       {/* CONTACT US PAGE */}
-      <div className="flex justify-between items-center relative max-w-[1440px] py-[55px]">
+      <div className="mx-auto flex justify-between items-center relative max-w-[1440px] py-[55px]">
         <Image
           alt="image"
           src="/contact-us-bg.jpg"

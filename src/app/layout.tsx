@@ -18,9 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} max-w-[1440px] mx-auto`}>
+      <body className={`${inter.className}`}>
         <Header />
-        <div>{children}</div>
+        <div className="min-h-[100vh]">{children}</div>
         <Footer />
       </body>
     </html>
