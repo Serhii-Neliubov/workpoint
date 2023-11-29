@@ -1,13 +1,12 @@
 "use client";
 import React, { ChangeEvent } from "react";
-import Footer from "@/components/footer";
-import Header from "@/components/header";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const [fileName, setFileName] = React.useState("No file chosen");
+  const [fileName, setFileName] = React.useState<string>("No file chosen");
 
+  // Upload file input functional
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     const fileInput = e.target;
     if (fileInput.files && fileInput.files.length > 0) {
@@ -417,77 +416,82 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col relative z-10 bg-white mx-auto pt-[56px] pb-[56px] pl-[40px] pr-[40px] rounded-[16px]">
-          <div className="mb-[24px] flex-col flex gap-[16px]">
-            <div className=" flex gap-[16px]">
-              <input
-                className="rounded-[5px] border-[1px] border-[#DCDCE2] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
-                type="text"
-                placeholder="Name"
-              />
-              <input
-                className="rounded-[5px] border-[1px] border-[#DCDCE2] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
-                type="text"
-                placeholder="Surname"
+        <div className=" flex flex-col relative z-10 bg-white mx-auto pt-[56px] pb-[56px] pl-[40px] pr-[40px] rounded-[16px]">
+          <div className="max-w-[406px] overflow-hidden">
+            <div className="mb-[24px] flex-col flex gap-[16px]">
+              <div className=" flex gap-[16px]">
+                <input
+                  className="rounded-[5px] border-[1px] border-[#DCDCE2] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
+                  type="text"
+                  placeholder="Name"
+                />
+                <input
+                  className="rounded-[5px] border-[1px] border-[#DCDCE2] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
+                  type="text"
+                  placeholder="Surname"
+                />
+              </div>
+              <div className="flex gap-[16px]">
+                <input
+                  className="rounded-[5px] border-[1px] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
+                  type="text"
+                  placeholder="Email"
+                />
+                <input
+                  className="rounded-[5px] border-[1px] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
+                  type="text"
+                  placeholder="Phone number"
+                />
+              </div>
+              <textarea
+                className="rounded-[5px] border-[1px] resize-none h-[180px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
+                placeholder="Let us know how we can help"
               />
             </div>
-            <div className="flex gap-[16px]">
-              <input
-                className="rounded-[5px] border-[1px] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
-                type="text"
-                placeholder="Email"
-              />
-              <input
-                className="rounded-[5px] border-[1px] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
-                type="text"
-                placeholder="Phone number"
-              />
-            </div>
-            <textarea
-              className="rounded-[5px] border-[1px] resize-none h-[180px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
-              placeholder="Let us know how we can help"
-            />
-          </div>
-          <span className="font-semibold text-[#00173A] mb-[16px]">
-            Attach relevant files:
-          </span>
-          <div className="mb-[32px] relative flex items-center gap-[16px]">
-            <div className="relative">
-              <Image
-                className="absolute top-[50%] left-[7%]  translate-y-[-50%]"
-                alt="upload file image"
-                src="/cloud-upload.svg"
-                width={16}
-                height={16}
-              />
-              <label
-                htmlFor="fileInput"
-                className="cursor-pointer hover:bg-[#ededed] hover:bg-opacity-[60%] transition-all duration-[.3s] border-[1px] bg-[#F8F8F8] text-[#585858]  py-[6px] pr-[12px] pl-[32px] inline-block"
-              >
-                Upload file
-              </label>
-            </div>
+            <span className="font-semibold text-[#00173A]">
+              Attach relevant files:
+            </span>
+            <div className="mt-[16px] mb-[32px] relative flex items-center gap-[16px]">
+              <div className="relative">
+                <Image
+                  className="absolute top-[50%] left-[7%]  translate-y-[-50%]"
+                  alt="upload file image"
+                  src="/cloud-upload.svg"
+                  width={16}
+                  height={16}
+                />
+                <label
+                  htmlFor="fileInput"
+                  className="whitespace-nowrap cursor-pointer hover:bg-[#ededed] hover:bg-opacity-[60%] transition-all duration-[.3s] border-[1px] bg-[#F8F8F8] text-[#585858]  py-[6px] pr-[12px] pl-[32px] inline-block"
+                >
+                  Upload file
+                </label>
+              </div>
 
-            <input
-              onChange={handleFileChange}
-              id="fileInput"
-              type="file"
-              className="hidden"
-            />
-            <span id="fileName" className="ml-2 text-[#585858]">
-              {fileName}
-            </span>
+              <input
+                onChange={handleFileChange}
+                id="fileInput"
+                type="file"
+                className="hidden"
+              />
+              <span
+                id="fileName"
+                className="ml-2 text-[#585858] whitespace-nowrap"
+              >
+                {fileName}
+              </span>
+            </div>
+            <div className="flex mb-[32px] gap-[10px] items-center">
+              <input type="checkbox" className="w-[28px] h-[28px]" />
+              <span className="max-w-[370px]">
+                I have read and agree with {`Workpoint's`} Privacy Policy and
+                Terms of Use!
+              </span>
+            </div>
+            <button className="w-[100%] py-[14px] font-semibold rounded-[8px] bg-[#FFCA1D]">
+              Send your request
+            </button>
           </div>
-          <div className="flex mb-[32px] gap-[10px] items-center">
-            <input type="checkbox" className="w-[28px] h-[28px]" />
-            <span className="max-w-[370px]">
-              I have read and agree with {`Workpoint's`} Privacy Policy and
-              Terms of Use!
-            </span>
-          </div>
-          <button className="py-[14px] font-semibold rounded-[8px] bg-[#FFCA1D]">
-            Send your request
-          </button>
         </div>
       </div>
       {/* JOIN US PAGE */}

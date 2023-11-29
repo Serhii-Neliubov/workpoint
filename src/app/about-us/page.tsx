@@ -1,7 +1,7 @@
 "use client";
-import React from "react";
+import React, { FC } from "react";
 
-const page = () => {
+const page: FC = () => {
   return <div>123</div>;
 };
 
