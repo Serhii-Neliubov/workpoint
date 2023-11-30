@@ -15,6 +15,9 @@ const config: Config = {
         "hero-particle": "url('/public/bg-blue-particle.png')",
         herobg: "url('')",
       },
+      boxShadow: {
+        custom: "0px 0px 20px 0px rgba(24, 28, 52, 0.08)",
+      },
     },
   },
   plugins: [],

@@ -108,7 +108,7 @@ const JoinOurTeamPage = () => {
               <span className="font-semibold text-[22px]">HR Recruiter</span>
               <p className="text-[#585858] text-[18px]">Full-time</p>
             </div>
-            <Link href="">
+            <Link href="/careers/join-our-team/hr-recruiter">
               <button className="py-[10px] px-[18px] rounded-[6px] font-semibold hover:bg-[#EEB700] transition-all duration-[.3s] bg-[#FFCA1D]">
                 Job requirements
               </button>
@@ -119,7 +119,7 @@ const JoinOurTeamPage = () => {
               <span className="font-semibold text-[22px]">Trainer</span>
               <p className="text-[#585858] text-[18px]">Full-time</p>
             </div>
-            <Link href="">
+            <Link href="/careers/join-our-team/trainer">
               <button className="py-[10px] px-[18px] rounded-[6px] font-semibold hover:bg-[#EEB700] transition-all duration-[.3s] bg-[#FFCA1D]">
                 Job requirements
               </button>
