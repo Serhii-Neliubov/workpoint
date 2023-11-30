@@ -370,7 +370,7 @@ export default function Home() {
         <Image
           alt="image"
           src="/contact-us-rectangle.svg"
-          className="absolute top-0 left-0 z-0 min-h-[704px] min-w-[1440px]"
+          className="absolute top-0 left-0 z-0 min-h-[704px] min-w-[1037px]"
           width={984}
           height={852}
         />

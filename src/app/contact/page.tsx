@@ -15,22 +15,22 @@ const ContactPage: FC = () => {
     }
   };
   return (
-    <div className="mx-auto overflow-hidden flex justify-between items-center relative max-w-[1440px] py-[55px]">
+    <div className="mx-auto flex overflow-hidden justify-between items-center relative max-w-[1440px] max-h-[852px] py-[55px]">
       <Image
         alt="image"
         src="/contact-us-bg.jpg"
-        className="absolute top-0 left-0 z-0 "
+        className="absolute top-0 left-0 z-0 min-h-[852px] min-w-[1440px]"
         width={1440}
         height={852}
       />
       <Image
         alt="image"
         src="/contact-us-rectangle.svg"
-        className="absolute top-0 left-0 z-0"
-        width={1037}
+        className="absolute top-0 left-0 z-0 min-h-[704px] min-w-[1037px]"
+        width={984}
         height={852}
       />
-      <div className="flex min-h-[100%] relative z-10 max-w-[1200px] mx-auto">
+      <div className="relative z-10 max-w-[1200px] mx-auto">
         <div className="relative">
           <div className="mt-[16px] mb-[52px] relative">
             <h1 className="after:content[''] after:absolute after:bottom-[-16px] after:rounded-full after:left-0  after:w-[100px] after:h-[4px] after:bg-[#FFCA1D] text-white text-[32px] font-semibold">
@@ -73,7 +73,7 @@ const ContactPage: FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col relative z-10 bg-white mx-auto pt-[56px] pb-[56px] pl-[40px] pr-[40px] rounded-[16px]">
+      <div className=" flex flex-col relative z-10 bg-white mx-auto pt-[56px] pb-[56px] pl-[40px] pr-[40px] rounded-[16px]">
         <div className="max-w-[406px] overflow-hidden">
           <div className="mb-[24px] flex-col flex gap-[16px]">
             <div className=" flex gap-[16px]">

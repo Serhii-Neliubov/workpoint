@@ -15,10 +15,13 @@ const page: FC = () => {
         <p className="text-[18px] max-w-[360px] text-[#585858]">
           Navigate the possibilities with our range of services.
         </p>
+        <button className="mt-[20px] rounded w-[95px] text-[15px] pt-[10px] pb-[10px] font-semibold bg-[#FFCA1D]">
+          Services
+        </button>
       </div>
       <div className="flex gap-[24px]">
         <div className="flex flex-col gap-[24px]">
-          <div className="hover:border-[#FFCA1D] hover:border-[3px] hover:p-[38px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
+          <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
             <Image
               alt="logo"
               src="shape-yellow.svg"
@@ -37,7 +40,7 @@ const page: FC = () => {
               />
             </Link>
           </div>
-          <div className="hover:border-[#FFCA1D] hover:border-[3px] hover:p-[38px] w-[384px] p-[40px] border rounded-[16px] border-[#DCDCE2]">
+          <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
             <Image
               alt="logo"
               src="shape-red.svg"
@@ -60,7 +63,7 @@ const page: FC = () => {
           </div>
         </div>
         <div className="flex flex-col gap-[24px]">
-          <div className="hover:border-[#FFCA1D] hover:border-[3px] hover:p-[38px] w-[384px] p-[40px] border rounded-[16px] border-[#DCDCE2]">
+          <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
             <Image
               alt="logo"
               src="shape-green.svg"
@@ -81,7 +84,7 @@ const page: FC = () => {
               />
             </Link>
           </div>
-          <div className="hover:border-[#FFCA1D] hover:border-[3px] hover:p-[38px] w-[384px] p-[40px] border rounded-[16px] border-[#DCDCE2]">
+          <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
             <Image
               alt="logo"
               src="shape-purple.svg"
