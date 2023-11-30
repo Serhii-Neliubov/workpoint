@@ -1,8 +1,8 @@
 "use client";
 import React, { FC } from "react";
 
-const page: FC = () => {
+const AboutPage: FC = () => {
   return <div>123</div>;
 };
 
-export default page;
+export default AboutPage;

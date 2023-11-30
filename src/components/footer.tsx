@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-[1200px] mx-auto">
         <div className="flex justify-between">
           <Link href="/" className="">
-            <Image width={206} height={23} src="logo.svg" alt="Logo" />
+            <Image width={206} height={23} src="/logo.svg" alt="Logo" />
           </Link>
           <nav>
             <ul className="flex gap-[48px]">

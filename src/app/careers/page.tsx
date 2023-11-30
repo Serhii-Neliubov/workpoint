@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { FC } from "react";
 
-const page: FC = () => {
+const CareersPage: FC = () => {
   return (
     <div className="max-w-[1440px] mx-auto">
       {/*WORKPOINT*/}
@@ -33,9 +34,11 @@ const page: FC = () => {
             for a diverse array of businesses, ranging from small enterprises to
             large corporations.
           </p>
-          <button className="hover:bg-[#EEB700] transition-all duration-[.3s] mt-[20px] rounded w-[150px] text-[15px] py-[14px] font-semibold bg-[#FFCA1D]">
-            Get in touch
-          </button>
+          <Link href="/careers/join-our-team">
+            <button className="hover:bg-[#EEB700] transition-all duration-[.3s] mt-[20px] rounded w-[150px] text-[15px] py-[14px] font-semibold bg-[#FFCA1D]">
+              Get in touch
+            </button>
+          </Link>
         </div>
       </div>
       {/*LABEL WHILE SIMILARITIES*/}
@@ -48,8 +51,43 @@ const page: FC = () => {
           </span>
         </div>
       </div>
+      {/*IMAGE*/}
+      <div className="relative w-[1440] h-[568px] overflow-hidden">
+        <Image
+          className="min-w-[1440]  absolute top-[65%] r-[50%] translate-y-[-50%]"
+          alt="Image"
+          src="/careers-bg2.jpg"
+          width={1440}
+          height={568}
+        />
+      </div>
+      {/*OUR CLIENTS*/}
+      <div className="py-[80px] max-w-[1200px] mx-auto">
+        <div className="flex justify-between max-w-[1200px]">
+          <div className="max-w-[486px]">
+            <p>
+              Our clientele spans across various sectors, including
+              manufacturers, financial institutions, biotech and pharmaceutical
+              companies, real estate developers and managers, technological
+              firms, non-profit organizations, and a myriad of others. Some of
+              our client partnerships extend beyond a decade, with returning
+              clients seeking our expertise to either elevate their existing
+              ventures or embark on new ones.
+            </p>
+          </div>
+          <div className="max-w-[486px]">
+            <p>
+              <span className="font-semibold">Workpoint</span> boasts a robust
+              and adaptable framework tailored to each industry, demonstrating
+              our commitment to personalized relationships. Our representatives
+              engage with corporate leaders, delving into discussions on how our
+              services can be tailored to meet their specific objectives.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default page;
+export default CareersPage;

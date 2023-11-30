@@ -3,7 +3,7 @@ import React, { ChangeEvent } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default function HomePage() {
   const [fileName, setFileName] = React.useState<string>("No file chosen");
 
   // Upload file input functional

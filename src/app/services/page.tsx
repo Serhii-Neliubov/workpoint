@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { FC } from "react";
 
-const page: FC = () => {
+const ServicesPage: FC = () => {
   return (
     <div className="max-w-[1200px] items-center pt-[80px] pb-[80px] mx-auto flex justify-between">
       <div className="flex flex-col">
@@ -109,4 +109,4 @@ const page: FC = () => {
   );
 };
 
-export default page;
+export default ServicesPage;
