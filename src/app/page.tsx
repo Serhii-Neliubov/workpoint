@@ -3,6 +3,9 @@ import React, { ChangeEvent } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+// STYLES
+import "@/styles/checkbox_styles.scss";
+
 export default function HomePage() {
   const [fileName, setFileName] = React.useState<string>("No file chosen");
 
@@ -510,11 +513,31 @@ export default function HomePage() {
                 {fileName}
               </span>
             </div>
-            <div className="flex mb-[32px] gap-[10px] items-center">
-              <input type="checkbox" className="w-[28px] h-[28px]" />
-              <span className="max-w-[370px]">
-                I have read and agree with {`Workpoint's`} Privacy Policy and
-                Terms of Use!
+            <div className="flex mb-[32px] gap-[10px]">
+              <label className="container mt-5 w-21 h-21 relative cursor-pointer">
+                <input
+                  type="checkbox"
+                  className="absolute opacity-0 cursor-pointer h-0 w-0"
+                />
+                <span className="checkmark absolute top-0 left-0 h-21 w-21 border-2 border-yellow-500 rounded-md"></span>
+                <span className="checkmark-icon absolute hidden top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  &#10003;
+                </span>
+              </label>
+
+              <span className="max-w-[370px] text-[#585858]">
+                I have read and agree with{" "}
+                <span className="font-semibold text-[#00173A]">{`Workpoint's`}</span>{" "}
+                <Link
+                  href="/privacy-policy"
+                  className="underline text-[#00173A]"
+                >
+                  Privacy Policy
+                </Link>{" "}
+                and{" "}
+                <Link href="/terms-of-use" className="underline text-[#00173A]">
+                  Terms of Use!
+                </Link>
               </span>
             </div>
             <button className="hover:bg-[#EEB700] transition-all duration-[.3s] w-[100%] py-[14px] font-semibold rounded-[8px] bg-[#FFCA1D]">
