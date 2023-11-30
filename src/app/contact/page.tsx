@@ -145,7 +145,7 @@ const ContactPage: FC = () => {
               Terms of Use!
             </span>
           </div>
-          <button className="w-[100%] py-[14px] font-semibold rounded-[8px] bg-[#FFCA1D]">
+          <button className="hover:bg-[#EEB700] transition-all duration-[.3s] w-[100%] py-[14px] font-semibold rounded-[8px] bg-[#FFCA1D]">
             Send your request
           </button>
         </div>

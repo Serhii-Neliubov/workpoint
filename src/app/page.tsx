@@ -58,7 +58,7 @@ export default function Home() {
               We provide services with varying lengths of time, based on the
               needs of each firm.
             </p>
-            <button className="pt-[14px] pr-[24px] pb-[14px] pl-[24px] rounded bg-[#FFCA1D] text-[18px] font-bold mt-[32px]">
+            <button className="hover:bg-[#EEB700] transition-all duration-[.3s] pt-[14px] pr-[24px] pb-[14px] pl-[24px] rounded bg-[#FFCA1D] text-[18px] font-bold mt-[32px]">
               Get in touch
             </button>
           </div>
@@ -76,7 +76,7 @@ export default function Home() {
           <p className="text-[18px] max-w-[360px] text-[#585858]">
             Navigate the possibilities with our range of services.
           </p>
-          <button className="mt-[20px] rounded w-[95px] text-[15px] pt-[10px] pb-[10px] font-semibold bg-[#FFCA1D]">
+          <button className="hover:bg-[#EEB700] transition-all duration-[.3s] mt-[20px] rounded w-[95px] text-[15px] pt-[10px] pb-[10px] font-semibold bg-[#FFCA1D]">
             Services
           </button>
         </div>
@@ -178,6 +178,34 @@ export default function Home() {
               height={680}
               className="absolute top-0 left-0"
             />
+            <Image
+              alt="image"
+              src="/no-closed-ellipse.png"
+              width={500}
+              height={500}
+              className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-20"
+            />
+            <Image
+              alt="image"
+              src="/circle_purple.svg"
+              width={40}
+              height={40}
+              className="absolute top-[15%] left-[100px] translate-x-[-50%] translate-y-[-50%] z-10"
+            />
+            <Image
+              alt="image"
+              src="/circle_orange.svg"
+              width={24}
+              height={24}
+              className="absolute bottom-[5%] left-[150px] translate-x-[-50%] translate-y-[-50%] z-10"
+            />
+            <Image
+              alt="image"
+              src="/circle_yellow_big.svg"
+              width={24}
+              height={24}
+              className="absolute bottom-[50%] right-[-22px] translate-x-[-50%] translate-y-[-50%] z-10"
+            />
             <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] overflow-hidden rounded-full  w-[582px] h-[582px]">
               <Image
                 alt="image"
@@ -199,7 +227,7 @@ export default function Home() {
               We provide services with varying lengths of time, based on the
               needs of each firm.
             </p>
-            <button className="mt-[20px] rounded w-[95px] text-[15px] pt-[10px] pb-[10px] font-semibold bg-[#FFCA1D]">
+            <button className="hover:bg-[#EEB700] transition-all duration-[.3s] mt-[20px] rounded w-[95px] text-[15px] pt-[10px] pb-[10px] font-semibold bg-[#FFCA1D]">
               Discover
             </button>
           </div>
@@ -219,7 +247,7 @@ export default function Home() {
             businesses – from small businesses to large corporations – in
             becoming long-term profitable.
           </p>
-          <button className="mt-[20px] rounded w-[116px] text-[15px] pt-[10px] pb-[10px] font-semibold bg-[#FFCA1D]">
+          <button className="hover:bg-[#EEB700] transition-all duration-[.3s] mt-[20px] rounded w-[116px] text-[15px] pt-[10px] pb-[10px] font-semibold bg-[#FFCA1D]">
             Learn more
           </button>
         </div>
@@ -489,7 +517,7 @@ export default function Home() {
                 Terms of Use!
               </span>
             </div>
-            <button className="w-[100%] py-[14px] font-semibold rounded-[8px] bg-[#FFCA1D]">
+            <button className="hover:bg-[#EEB700] transition-all duration-[.3s] w-[100%] py-[14px] font-semibold rounded-[8px] bg-[#FFCA1D]">
               Send your request
             </button>
           </div>
@@ -512,7 +540,7 @@ export default function Home() {
             Explore exciting opportunities to be part of a dynamic and
             innovative team.
           </p>
-          <button className="mt-[24px] pb-[12px] pt-[12px] pr-[24px] pl-[24px] rounded-[6px] font-semibold text-[18px] bg-[#FFCA1D]">
+          <button className="hover:bg-[#EEB700] transition-all duration-[.3s] mt-[24px] pb-[12px] pt-[12px] pr-[24px] pl-[24px] rounded-[6px] font-semibold text-[18px] bg-[#FFCA1D]">
             Open Positions
           </button>
         </div>
