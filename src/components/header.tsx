@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation";
 const Header = () => {
   const pathname = usePathname();
   return (
-    <header className="max-w-[1200px] mx-auto pt-[24px] pb-[24px]">
-      <div className="flex justify-between items-center">
+    <header className="pt-[24px] pb-[24px]">
+      <div className="flex mx-auto justify-between items-center max-w-[1200px]">
         <nav>
           <ul className="flex gap-[80px]">
             <li className="font-semibold relative">

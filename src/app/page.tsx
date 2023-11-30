@@ -19,23 +19,24 @@ export default function Home() {
   return (
     <div>
       {/* HERO PAGE */}
-      <div className=" mx-auto relative max-w-[1440px] pt-[146px] pb-[146px]">
+      <div className="overflow-hidden mx-auto relative max-w-[1440px]">
         <Image
           alt="image"
           src="/hero-bg.jpg"
-          className="absolute top-0 left-0 z-0"
+          className="absolute top-0 left-0 z-1 min-h-[704px] min-w-[1440px]"
           width={1440}
-          height={100}
+          height={704}
         />
         <Image
           alt="image"
           src="/bg-blue-particle.svg"
-          className="absolute top-0 left-0 z-0"
+          className="absolute top-0 left-0 z-1 min-h-[704px] min-w-[1440px]"
           width={1440}
-          height={100}
+          height={704}
         />
-        <div className="relative z-10 max-w-[1200px] mx-auto">
-          <div className="relative">
+
+        <div className="pt-[146px] pb-[146px] relative mx-auto max-w-[1200px]">
+          <div className="z-10 relative">
             <Image
               alt="image"
               src="/Handshake.png"
@@ -81,7 +82,7 @@ export default function Home() {
         </div>
         <div className="flex gap-[24px]">
           <div className="flex flex-col gap-[24px]">
-            <div className="hover:border-[#FFCA1D] hover:border-[3px] hover:p-[38px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
+            <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
               <Image
                 alt="logo"
                 src="shape-yellow.svg"
@@ -100,7 +101,7 @@ export default function Home() {
                 />
               </Link>
             </div>
-            <div className="hover:border-[#FFCA1D] hover:border-[3px] hover:p-[38px] w-[384px] p-[40px] border rounded-[16px] border-[#DCDCE2]">
+            <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
               <Image
                 alt="logo"
                 src="shape-red.svg"
@@ -123,7 +124,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col gap-[24px]">
-            <div className="hover:border-[#FFCA1D] hover:border-[3px] hover:p-[38px] w-[384px] p-[40px] border rounded-[16px] border-[#DCDCE2]">
+            <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
               <Image
                 alt="logo"
                 src="shape-green.svg"
@@ -144,7 +145,7 @@ export default function Home() {
                 />
               </Link>
             </div>
-            <div className="hover:border-[#FFCA1D] hover:border-[3px] hover:p-[38px] w-[384px] p-[40px] border rounded-[16px] border-[#DCDCE2]">
+            <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
               <Image
                 alt="logo"
                 src="shape-purple.svg"
@@ -358,19 +359,19 @@ export default function Home() {
         </div>
       </div>
       {/* CONTACT US PAGE */}
-      <div className="mx-auto flex justify-between items-center relative max-w-[1440px] py-[55px]">
+      <div className="mx-auto flex overflow-hidden justify-between items-center relative max-w-[1440px] max-h-[852px] py-[55px]">
         <Image
           alt="image"
           src="/contact-us-bg.jpg"
-          className="absolute top-0 left-0 z-0 "
+          className="absolute top-0 left-0 z-0 min-h-[852px] min-w-[1440px]"
           width={1440}
           height={852}
         />
         <Image
           alt="image"
           src="/contact-us-rectangle.svg"
-          className="absolute top-0 left-0 z-0"
-          width={1037}
+          className="absolute top-0 left-0 z-0 min-h-[704px] min-w-[1440px]"
+          width={984}
           height={852}
         />
         <div className="relative z-10 max-w-[1200px] mx-auto">
@@ -498,7 +499,7 @@ export default function Home() {
       <div className="pt-[80px] overflow-hidden pb-[80px] bg-black relative max-w-[1440px] max-h-[379px] mx-auto">
         <Image
           alt="arrow"
-          className="absolute top-0 left-0"
+          className="absolute top-0 left-0 min-h-[379px] min-w-[1440px]"
           src="career.svg"
           width={1440}
           height={379}
