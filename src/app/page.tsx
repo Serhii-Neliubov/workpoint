@@ -1,24 +1,14 @@
 "use client";
-import React, { ChangeEvent } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 // STYLES
 import "@/styles/checkbox_styles.scss";
+import ContactUsForm from "@/components/ContactUsForm";
+import LearnMoreBlock from "@/components/LearnMoreBlock";
 
 export default function HomePage() {
-  const [fileName, setFileName] = React.useState<string>("No file chosen");
-
-  // Upload file input functional
-  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const fileInput = e.target;
-    if (fileInput.files && fileInput.files.length > 0) {
-      setFileName(fileInput.files[0].name);
-    } else {
-      setFileName("No file chosen");
-    }
-  };
-
   return (
     <div>
       {/* HERO PAGE */}
@@ -85,88 +75,28 @@ export default function HomePage() {
         </div>
         <div className="flex gap-[24px]">
           <div className="flex flex-col gap-[24px]">
-            <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
-              <Image
-                alt="logo"
-                src="shape-yellow.svg"
-                width={64}
-                height={64}
-                className="mb-[24px]"
-              />
-              <span className="text-[22px] font-semibold">Human Resources</span>
-              <Link className="flex gap-[4px] items-center mt-[48px]" href="/">
-                <span className="text-[#FFCA1D]">Learn more</span>
-                <Image
-                  alt="arrow"
-                  src="arrow-right-orange.svg"
-                  width={14}
-                  height={14}
-                />
-              </Link>
-            </div>
-            <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
-              <Image
-                alt="logo"
-                src="shape-red.svg"
-                width={64}
-                height={64}
-                className="mb-[24px]"
-              />
-              <span className=" text-[22px] font-semibold">
-                Executive recruitment
-              </span>
-              <Link className="flex gap-[4px] items-center mt-[48px]" href="/">
-                <span className="text-[#FFCA1D]">Learn more</span>
-                <Image
-                  alt="arrow"
-                  src="arrow-right-orange.svg"
-                  width={14}
-                  height={14}
-                />
-              </Link>
-            </div>
+            <LearnMoreBlock
+              image="/shape-yellow.svg"
+              link="#"
+              title="Human Resources"
+            />
+            <LearnMoreBlock
+              image="/shape-red.svg"
+              link="#"
+              title="Executive recruitment"
+            />
           </div>
           <div className="flex flex-col gap-[24px]">
-            <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
-              <Image
-                alt="logo"
-                src="shape-green.svg"
-                width={64}
-                height={64}
-                className="mb-[24px]"
-              />
-              <span className=" text-[22px] font-semibold">
-                Management Consulting
-              </span>
-              <Link className="flex gap-[4px] items-center mt-[48px]" href="/">
-                <span className="text-[#FFCA1D]">Learn more</span>
-                <Image
-                  alt="arrow"
-                  src="arrow-right-orange.svg"
-                  width={14}
-                  height={14}
-                />
-              </Link>
-            </div>
-            <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
-              <Image
-                alt="logo"
-                src="shape-purple.svg"
-                width={64}
-                height={64}
-                className="mb-[24px]"
-              />
-              <span className=" text-[22px] font-semibold">Training</span>
-              <Link className="flex gap-[4px] items-center mt-[48px]" href="/">
-                <span className="text-[#FFCA1D]">Learn more</span>
-                <Image
-                  alt="arrow"
-                  src="arrow-right-orange.svg"
-                  width={14}
-                  height={14}
-                />
-              </Link>
-            </div>
+            <LearnMoreBlock
+              image="/shape-green.svg"
+              link="#"
+              title="Management Consulting"
+            />
+            <LearnMoreBlock
+              image="/shape-purple.svg"
+              link="#"
+              title="Training"
+            />
           </div>
         </div>
       </div>
@@ -390,7 +320,7 @@ export default function HomePage() {
         </div>
       </div>
       {/* CONTACT US PAGE */}
-      <div className="mx-auto flex overflow-hidden justify-between items-center relative max-w-[1440px] max-h-[852px] py-[55px]">
+      <div className="mx-auto relative max-w-[1440px] max-h-[852px] py-[55px]">
         <Image
           alt="image"
           src="/contact-us-bg.jpg"
@@ -405,7 +335,7 @@ export default function HomePage() {
           width={984}
           height={852}
         />
-        <div className="relative z-10 max-w-[1200px] mx-auto">
+        <div className="relative mx-auto flex justify-between z-10 max-w-[1200px] ">
           <div className="relative">
             <div className="mt-[16px] mb-[52px] relative">
               <h1 className="after:content[''] after:absolute after:bottom-[-16px] after:rounded-full after:left-0  after:w-[100px] after:h-[4px] after:bg-[#FFCA1D] text-white text-[32px] font-semibold">
@@ -447,103 +377,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </div>
-        <div className=" flex flex-col relative z-10 bg-white mx-auto pt-[56px] pb-[56px] pl-[40px] pr-[40px] rounded-[16px]">
-          <div className="max-w-[406px] overflow-hidden">
-            <div className="mb-[24px] flex-col flex gap-[16px]">
-              <div className=" flex gap-[16px]">
-                <input
-                  className="rounded-[5px] border-[1px] border-[#DCDCE2] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
-                  type="text"
-                  placeholder="Name"
-                />
-                <input
-                  className="rounded-[5px] border-[1px] border-[#DCDCE2] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
-                  type="text"
-                  placeholder="Surname"
-                />
-              </div>
-              <div className="flex gap-[16px]">
-                <input
-                  className="rounded-[5px] border-[1px] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
-                  type="text"
-                  placeholder="Email"
-                />
-                <input
-                  className="rounded-[5px] border-[1px] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
-                  type="text"
-                  placeholder="Phone number"
-                />
-              </div>
-              <textarea
-                className="rounded-[5px] border-[1px] resize-none h-[180px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
-                placeholder="Let us know how we can help"
-              />
-            </div>
-            <span className="font-semibold text-[#00173A]">
-              Attach relevant files:
-            </span>
-            <div className="mt-[16px] mb-[32px] relative flex items-center gap-[16px]">
-              <div className="relative">
-                <Image
-                  className="absolute top-[50%] left-[7%]  translate-y-[-50%]"
-                  alt="upload file image"
-                  src="/cloud-upload.svg"
-                  width={16}
-                  height={16}
-                />
-                <label
-                  htmlFor="fileInput"
-                  className="whitespace-nowrap cursor-pointer hover:bg-[#ededed] hover:bg-opacity-[60%] transition-all duration-[.3s] border-[1px] bg-[#F8F8F8] text-[#585858]  py-[6px] pr-[12px] pl-[32px] inline-block"
-                >
-                  Upload file
-                </label>
-              </div>
-
-              <input
-                onChange={handleFileChange}
-                id="fileInput"
-                type="file"
-                className="hidden"
-              />
-              <span
-                id="fileName"
-                className="ml-2 text-[#585858] whitespace-nowrap"
-              >
-                {fileName}
-              </span>
-            </div>
-            <div className="flex mb-[32px] gap-[10px]">
-              <label className="container mt-5 w-21 h-21 relative cursor-pointer">
-                <input
-                  type="checkbox"
-                  className="absolute opacity-0 cursor-pointer h-0 w-0"
-                />
-                <span className="checkmark absolute top-0 left-0 h-21 w-21 border-2 border-yellow-500 rounded-md"></span>
-                <span className="checkmark-icon absolute hidden top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  &#10003;
-                </span>
-              </label>
-
-              <span className="max-w-[370px] text-[#585858]">
-                I have read and agree with{" "}
-                <span className="font-semibold text-[#00173A]">{`Workpoint's`}</span>{" "}
-                <Link
-                  href="/privacy-policy"
-                  className="underline text-[#00173A]"
-                >
-                  Privacy Policy
-                </Link>{" "}
-                and{" "}
-                <Link href="/terms-of-use" className="underline text-[#00173A]">
-                  Terms of Use!
-                </Link>
-              </span>
-            </div>
-            <button className="hover:bg-[#EEB700] transition-all duration-[.3s] w-[100%] py-[14px] font-semibold rounded-[8px] bg-[#FFCA1D]">
-              Send your request
-            </button>
-          </div>
+          <ContactUsForm />
         </div>
       </div>
       {/* JOIN US PAGE */}

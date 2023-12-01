@@ -40,7 +40,7 @@ const Footer = () => {
                 <Link href="/services/privacy-policy">Privacy Policy</Link>
               </li>
               <li>
-                <Link href="/terms-of-use">Terms of Use</Link>
+                <Link href="/services/terms-of-use">Terms of Use</Link>
               </li>
             </ul>
           </nav>
