@@ -12,18 +12,25 @@ interface SendingData {
   phone: string;
   description: string;
   file: string;
+  privacyPolicy: boolean;
 }
+
+const clearData = {
+  name: "",
+  surname: "",
+  email: "",
+  phone: "",
+  description: "",
+  file: "",
+  privacyPolicy: false,
+};
 
 const ContactUsForm = () => {
   const [fileName, setFileName] = useState<string>("No file chosen");
-  const [sendingData, setSendingData] = useState<SendingData>({
-    name: "",
-    surname: "",
-    email: "",
-    phone: "",
-    description: "",
-    file: "",
-  });
+  const [policyChecked, setPolicyChecked] = useState<boolean>(
+    clearData.privacyPolicy
+  );
+  const [sendingData, setSendingData] = useState<SendingData>(clearData);
   // Upload file input functional
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     const fileInput = e.target;
@@ -37,18 +44,28 @@ const ContactUsForm = () => {
   };
 
   function sendingRequestHandler() {
-    console.log(sendingData);
-
-    axios
-      .post("http://localhost:3001/users", sendingData)
-      .then((response) => {
-        console.log(response.data);
-        // Добавьте дополнительную логику, если необходимо
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        // Добавьте обработку ошибок
-      });
+    if (
+      sendingData.name &&
+      sendingData.description &&
+      sendingData.email &&
+      sendingData.phone &&
+      sendingData.surname &&
+      policyChecked == true
+    ) {
+      console.log(sendingData);
+      axios
+        .post("http://localhost:3001/users", sendingData)
+        .then((response) => {
+          console.log(response.data);
+          // Добавьте дополнительную логику, если необходимо
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          // Добавьте обработку ошибок
+        });
+      setSendingData(clearData);
+      setPolicyChecked(false);
+    }
   }
   return (
     <div className="box-shadow-custom shadow flex flex-col relative z-10 bg-white pt-[56px] pb-[56px] pl-[40px] pr-[40px] rounded-[16px]">
@@ -59,6 +76,7 @@ const ContactUsForm = () => {
               onChange={(e) =>
                 setSendingData({ ...sendingData, name: e.target.value })
               }
+              value={sendingData.name}
               className="rounded-[5px] border-[1px] border-[#DCDCE2] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
               type="text"
               placeholder="Name"
@@ -136,6 +154,8 @@ const ContactUsForm = () => {
           <label className="container mt-5 w-21 h-21 relative cursor-pointer">
             <input
               type="checkbox"
+              checked={policyChecked}
+              onChange={(e) => setPolicyChecked(e.target.checked)}
               className="absolute opacity-0 cursor-pointer h-0 w-0"
             />
             <span className="checkmark absolute top-0 left-0 h-21 w-21 border-2 border-yellow-500 rounded-md"></span>
@@ -147,11 +167,17 @@ const ContactUsForm = () => {
           <span className="max-w-[370px] text-[#585858]">
             I have read and agree with{" "}
             <span className="font-semibold text-[#00173A]">{`Workpoint's`}</span>{" "}
-            <Link href="/privacy-policy" className="underline text-[#00173A]">
+            <Link
+              href="/services/privacy-policy"
+              className="underline text-[#00173A]"
+            >
               Privacy Policy
             </Link>{" "}
             and{" "}
-            <Link href="/terms-of-use" className="underline text-[#00173A]">
+            <Link
+              href="/services/terms-of-use"
+              className="underline text-[#00173A]"
+            >
               Terms of Use!
             </Link>
           </span>
