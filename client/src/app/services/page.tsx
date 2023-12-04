@@ -1,111 +1,46 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { FC } from "react";
+import LearnMoreBlock from '@/components/LearnMoreBlock';
 
 const ServicesPage: FC = () => {
   return (
-    <div className="max-w-[1200px] items-center pt-[80px] pb-[80px] mx-auto flex justify-between">
-      <div className="flex flex-col">
-        <div className="relative">
-          <h2 className=" after:content[''] after:absolute after:bottom-[32px] rounded-full after:left-0 after:w-[100px] after:h-[4px] after:bg-[#FFCA1D] font-semibold max-w-[384px] text-[32px] mb-[52px]">
-            Services that will help you take your vision a step further
-          </h2>
-        </div>
+      <div
+          className={`max-w-[1280px] px-[40px] max-[650px]:px-[16px] w-[100%] items-center pt-[80px] pb-[80px] mx-auto flex items-start gap-[40px] max-[910px]:flex-col`}>
+        <div className="flex flex-col w-[50%] max-[910px]:w-full">
+          <div className="relative">
+            <h2 className=" after:content[''] after:absolute after:bottom-[32px] rounded-full after:left-0 after:w-[100px] after:h-[4px] after:bg-[#FFCA1D] font-semibold max-w-[384px] max-[910px]:max-w-[497px] text-[32px] mb-[52px]">
+              Services that will help you take your vision a step further
+            </h2>
+          </div>
 
-        <p className="text-[18px] max-w-[360px] text-[#585858]">
-          Navigate the possibilities with our range of services.
-        </p>
-        <button className="mt-[20px] rounded w-[95px] text-[15px] pt-[10px] pb-[10px] font-semibold bg-[#FFCA1D]">
-          Services
-        </button>
-      </div>
-      <div className="flex gap-[24px]">
-        <div className="flex flex-col gap-[24px]">
-          <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
-            <Image
-              alt="logo"
-              src="shape-yellow.svg"
-              width={64}
-              height={64}
-              className="mb-[24px]"
-            />
-            <span className="text-[22px] font-semibold">Human Resources</span>
-            <Link className="flex gap-[4px] items-center mt-[48px]" href="/">
-              <span className="text-[#FFCA1D]">Learn more</span>
-              <Image
-                alt="arrow"
-                src="arrow-right-orange.svg"
-                width={14}
-                height={14}
-              />
-            </Link>
-          </div>
-          <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
-            <Image
-              alt="logo"
-              src="shape-red.svg"
-              width={64}
-              height={64}
-              className="mb-[24px]"
-            />
-            <span className=" text-[22px] font-semibold">
-              Executive recruitment
-            </span>
-            <Link className="flex gap-[4px] items-center mt-[48px]" href="/">
-              <span className="text-[#FFCA1D]">Learn more</span>
-              <Image
-                alt="arrow"
-                src="arrow-right-orange.svg"
-                width={14}
-                height={14}
-              />
-            </Link>
-          </div>
+          <p className="text-[18px] max-w-[360px] max-[910px]:max-w-[497px] text-[#585858]">
+            Navigate the possibilities with our range of services.
+          </p>
         </div>
-        <div className="flex flex-col gap-[24px]">
-          <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
-            <Image
-              alt="logo"
-              src="shape-green.svg"
-              width={64}
-              height={64}
-              className="mb-[24px]"
-            />
-            <span className=" text-[22px] font-semibold">
-              Management Consulting
-            </span>
-            <Link className="flex gap-[4px] items-center mt-[48px]" href="/">
-              <span className="text-[#FFCA1D]">Learn more</span>
-              <Image
-                alt="arrow"
-                src="arrow-right-orange.svg"
-                width={14}
-                height={14}
-              />
-            </Link>
-          </div>
-          <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
-            <Image
-              alt="logo"
-              src="shape-purple.svg"
-              width={64}
-              height={64}
-              className="mb-[24px]"
-            />
-            <span className=" text-[22px] font-semibold">Training</span>
-            <Link className="flex gap-[4px] items-center mt-[48px]" href="/">
-              <span className="text-[#FFCA1D]">Learn more</span>
-              <Image
-                alt="arrow"
-                src="arrow-right-orange.svg"
-                width={14}
-                height={14}
-              />
-            </Link>
-          </div>
+        <div className="grid grid-cols-2 gap-[24px] w-[50%] max-[910px]:w-full max-[560px]:grid-cols-1 max-[560px]:gap-[16px]">
+          <LearnMoreBlock
+              image="/shape-yellow.svg"
+              link="/services/human-resources"
+              title="Human Resources"
+          />
+          <LearnMoreBlock
+              image="/shape-red.svg"
+              link="/services/executive-recruitment"
+              title="Executive recruitment"
+          />
+          <LearnMoreBlock
+              image="/shape-green.svg"
+              link="/services/management-consulting"
+              title="Management Consulting"
+          />
+          <LearnMoreBlock
+              image="/shape-purple.svg"
+              link="/services/training"
+              title="Training"
+          />
         </div>
       </div>
-    </div>
   );
 };
 

@@ -68,16 +68,16 @@ const ContactUsForm = () => {
     }
   }
   return (
-    <div className="box-shadow-custom shadow flex flex-col relative z-10 bg-white pt-[56px] pb-[56px] pl-[40px] pr-[40px] rounded-[16px]">
+    <div className="box-shadow-custom shadow flex flex-col relative z-10 bg-white py-[56px] px-[40px] rounded-[16px] w-[486px] max-w-full max-[568px]:px-[32px] max-[568px]:py-[48px]">
       <div className="max-w-[406px] overflow-hidden">
         <div className="mb-[24px] flex-col flex gap-[16px]">
-          <div className=" flex gap-[16px]">
+          <div className=" flex gap-[16px] max-[568px]:flex-col">
             <input
               onChange={(e) =>
                 setSendingData({ ...sendingData, name: e.target.value })
               }
               value={sendingData.name}
-              className="rounded-[5px] border-[1px] border-[#DCDCE2] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
+              className="rounded-[5px] border-[1px] border-[#DCDCE2] w-full py-[12px] px-[16px]"
               type="text"
               placeholder="Name"
             />
@@ -86,18 +86,18 @@ const ContactUsForm = () => {
                 setSendingData({ ...sendingData, surname: e.target.value })
               }
               value={sendingData.surname}
-              className="rounded-[5px] border-[1px] border-[#DCDCE2] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
+              className="rounded-[5px] border-[1px] border-[#DCDCE2] w-full py-[12px] px-[16px]"
               type="text"
               placeholder="Surname"
             />
           </div>
-          <div className="flex gap-[16px]">
+          <div className="flex gap-[16px] max-[568px]:flex-col">
             <input
               onChange={(e) =>
                 setSendingData({ ...sendingData, email: e.target.value })
               }
               value={sendingData.email}
-              className="rounded-[5px] border-[1px] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
+              className="rounded-[5px] border-[1px] w-full py-[12px] px-[16px]"
               type="text"
               placeholder="Email"
             />
@@ -106,7 +106,7 @@ const ContactUsForm = () => {
                 setSendingData({ ...sendingData, phone: e.target.value })
               }
               value={sendingData.phone}
-              className="rounded-[5px] border-[1px] w-[195px] pt-[12px] pb-[12px] pr-[16px] pl-[16px]"
+              className="rounded-[5px] border-[1px] w-full py-[12px] px-[16px]"
               type="text"
               placeholder="Phone number"
             />
@@ -150,21 +150,21 @@ const ContactUsForm = () => {
             {fileName}
           </span>
         </div>
-        <div className="flex mb-[32px] gap-[10px]">
-          <label className="container mt-5 w-21 h-21 relative cursor-pointer">
+        <div className="flex mb-[32px] gap-[10px] items-start justify-start">
+          <label className="container mt-5 w-[21px] h-[21px] min-w-[21px] relative cursor-pointer">
             <input
               type="checkbox"
               checked={policyChecked}
               onChange={(e) => setPolicyChecked(e.target.checked)}
               className="absolute opacity-0 cursor-pointer h-0 w-0"
             />
-            <span className="checkmark absolute top-0 left-0 h-21 w-21 border-2 border-yellow-500 rounded-md"></span>
+            <span className="checkmark absolute top-0 left-0 w-[21px] h-[21px] border-2 border-yellow-500 rounded-md"></span>
             <span className="checkmark-icon absolute hidden top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               &#10003;
             </span>
           </label>
 
-          <span className="max-w-[370px] text-[#585858]">
+          <span className=" text-[#585858]">
             I have read and agree with{" "}
             <span className="font-semibold text-[#00173A]">{`Workpoint's`}</span>{" "}
             <Link

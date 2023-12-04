@@ -3,16 +3,16 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#F8F8F8] pt-[40px] pb-[40px]">
-      <div className="max-w-[1200px] mx-auto">
-        <div className="flex justify-between">
-          <Link href="/" className="">
+    <div className="bg-[#F8F8F8] py-[40px] pb-[40px]">
+      <div className="max-w-[1280px] px-[40px] w-full max-[650px]:px-[16px] mx-auto">
+        <div className="flex justify-between max-[772px]:flex-col max-[772px]:items-center max-[772px]:gap-[32px]">
+          <Link href="/" className="min-w-[186px]">
             <Image width={206} height={23} src="/logo.svg" alt="Logo" />
           </Link>
           <nav>
-            <ul className="flex gap-[48px]">
+            <ul className="flex max-[982px]:gap-[24px] gap-[48px] max-[772px]:flex-wrap max-[772px]:justify-center">
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/" >Home</Link>
               </li>
               <li>
                 <Link href="/about-us">About us</Link>
@@ -32,8 +32,8 @@ const Footer = () => {
             </ul>
           </nav>
         </div>
-        <div className="flex justify-between mt-[24px]">
-          <span>Copyright © 2023. All rights reserved.</span>
+        <div className="flex justify-between mt-[24px] max-[643px]:flex-col-reverse max-[643px]:items-center max-[643px]:gap-[16px]">
+          <span className={'text-center'}>Copyright © 2023. All rights reserved.</span>
           <nav>
             <ul className="flex gap-[40px]">
               <li>
@@ -46,7 +46,7 @@ const Footer = () => {
           </nav>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 

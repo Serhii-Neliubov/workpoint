@@ -10,7 +10,7 @@ interface LearnMoreBlockProps {
 
 const LearnMoreBlock = ({ image, title, link }: LearnMoreBlockProps) => {
   return (
-    <div className="hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[384px]  border rounded-[16px] border-[#DCDCE2]">
+    <div className="  flex flex-col hover:outline hover:outline-[#FFCA1D] hover:outline-[3px] p-[40px] inline-block w-[100%]  border rounded-[16px] border-[#DCDCE2]">
       <Image
         alt="logo"
         src={image}
@@ -18,7 +18,7 @@ const LearnMoreBlock = ({ image, title, link }: LearnMoreBlockProps) => {
         height={64}
         className="mb-[24px]"
       />
-      <span className="text-[22px] font-semibold">{title}</span>
+      <span className=" grow text-[22px] font-semibold">{title}</span>
       <Link className="flex gap-[4px] items-center mt-[48px]" href={link}>
         <span className="text-[#FFCA1D]">Learn more</span>
         <Image

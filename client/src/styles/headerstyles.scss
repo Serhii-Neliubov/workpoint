@@ -1,0 +1,70 @@
+
+.desktop-header {
+  @media  screen and (max-width: 900px){
+    display: none;
+  }
+  @media screen and (min-width: 901px) {
+    display: flex;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media screen and (max-width: 650px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+.mobile-header {
+  @media  screen and (max-width: 900px){
+    display: flex;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media screen and (min-width: 901px) {
+    display: none;
+  }
+  @media screen and (max-width: 650px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.itemWithOptions:hover {
+  & .iOptionsContainer {
+    display: block;
+  }
+
+  & > a:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    background: #FFCA1D;
+    width: 100%;
+    height: 3px;
+
+  }
+
+}
+.itemWithOptions .iOptionsContainer {
+  display: none;
+  //&.active {
+  //  display: block;
+  //}
+  //&.closed {
+  //  display: none;
+  //}
+}

@@ -1,19 +1,15 @@
 import Link from "next/link";
 import React from "react";
 
-/* <Link href="/" className="text-[#00173A] font-semibold">
-Workpoint.com
-</Link>{" "} */
-
 const page = () => {
   return (
     <div>
-      <div className="max-w-[1440px] bg-[#4B4AEF] mx-auto">
-        <div className="py-[80px]  max-w-[1200px] mx-auto">
-          <h1 className="text-white text-[48px] font-semibold">Terms of Use</h1>
+      <div className=" bg-[#4B4AEF] max-w-[1440px]">
+        <div className="py-[80px]  w-full max-w-[1280px] px-[40px] max-[650px]:px-[16px] mx-auto">
+          <h1 className="text-white text-[48px] max-[1000px]:text-[38px] font-semibold">Terms of Use</h1>
         </div>
       </div>
-      <div className="max-w-[1200px] mx-auto py-[80px]">
+      <div className="w-full max-w-[1280px] max-[650px]:px-[16px] px-[40px] mx-auto py-[80px]">
         <div className="flex flex-col gap-[40px]">
           {/*Our site uses cookies.*/}
           <div className="max-w-[1020px]">

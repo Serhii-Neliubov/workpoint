@@ -7,9 +7,9 @@ import ContactUsForm from "@/components/ContactUsForm";
 
 const HRRecruiterPage = () => {
   return (
-    <div className="max-w-[1200px] mx-auto">
-      <div className="flex justify-between pt-[60px] pb-[120px]">
-        <div className="max-w-[588px]">
+    <div className="max-w-[1280px] px-[40px] max-[650px]:px-[16px] w-full mx-auto">
+      <div className="flex justify-between pt-[60px] pb-[120px] gap-[30px] max-[988px]:flex-col">
+        <div className="flex-[0_1_50%]">
           <h1 className="mb-[32px] text-[48px] font-semibold">HR Recruiter</h1>
           <span className="text-[32px] font-semibold">Responsibilities:</span>
           <nav className="pl-[18px] mt-[24px] mb-[32px]">
