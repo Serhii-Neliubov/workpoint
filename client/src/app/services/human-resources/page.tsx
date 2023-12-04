@@ -60,7 +60,7 @@ const HumanResourcesPage = () => {
                                alt={'/human-resourses1img.jpg'} height={453} width={453}/>
                     </div>
 
-                <div className={'h-full w-1/2 max-[820px]:w-full flex flex-col '}>
+                <div className={'h-full w-1/2 max-[820px]:w-full flex flex-col items-start '}>
                     <div className="relative pb-[18px] mb-[32px]">
                         <h3 className="text-[32px] leading-[150%] max-w-[486px] text-[#000] after:content[''] after:absolute after:bottom-[0px] after:rounded-full after:left-0 after:w-[100px] after:h-[4px] after:bg-[#FFCA1D] font-semibold">
                             Consulting
@@ -152,7 +152,7 @@ and tailored.</span>
                                alt={'/human-resourses2img.jpg'} height={453} width={453}/>
                     </div>
 
-                <div className={'h-full w-1/2 max-[820px]:w-full flex flex-col '}>
+                <div className={'h-full w-1/2 max-[820px]:w-full flex flex-col items-start'}>
                     <div className="relative pb-[18px] mb-[32px]">
                         <h3 className="text-[32px] leading-[150%] max-w-[486px] text-[#000] after:content[''] after:absolute after:bottom-[0px] after:rounded-full after:left-0 after:w-[100px] after:h-[4px] after:bg-[#FFCA1D] font-semibold">
                             Documents and Policies

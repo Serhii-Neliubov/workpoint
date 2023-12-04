@@ -69,7 +69,7 @@ export default function HomePage() {
             {/* SERVICES PAGE */}
             <div
                 className={`max-w-[1280px] px-[40px] max-[650px]:px-[16px] w-[100%] items-center pt-[80px] pb-[80px] mx-auto flex items-start gap-[40px] max-[910px]:flex-col`}>
-                <div className="flex flex-col w-[50%] max-[910px]:w-full">
+                <div className="flex flex-col w-[50%] max-[910px]:w-full items-start">
                     <div className="relative">
                         <h2 className=" after:content[''] after:absolute after:bottom-[32px] rounded-full after:left-0 after:w-[100px] after:h-[4px] after:bg-[#FFCA1D] font-semibold max-w-[384px] max-[890px]:max-w-[497px] text-[32px] mb-[52px]">
                             Services that will help you take your vision a step further
@@ -79,6 +79,7 @@ export default function HomePage() {
                     <p className="text-[18px] max-w-[360px] max-[910px]:max-w-[497px] text-[#585858]">
                         Navigate the possibilities with our range of services.
                     </p>
+
                     <Link href={'/services'}>
                         <button
                             className="hover:bg-[#EEB700] transition-all duration-[.3s] mt-[20px] rounded w-[95px] text-[15px] pt-[10px] pb-[10px] font-semibold bg-[#FFCA1D]">
@@ -124,7 +125,7 @@ export default function HomePage() {
 
 
                         <div
-                            className="flex flex-col flex-[0_1_50%] max-[820px]:items-start max-[820px]:justify-start max-[820px]:w-full">
+                            className="flex flex-col flex-[0_1_50%] items-start max-[820px]:justify-start max-[820px]:w-full">
                             <div className="relative">
                                 <h2 className=" after:content[''] after:absolute after:bottom-[32px] rounded-full after:left-0 after:w-[100px] after:h-[4px] after:bg-[#FFCA1D] font-semibold max-w-[375px] text-[32px] mb-[52px]">
                                     Find out who we are and why you should work with us
@@ -157,7 +158,7 @@ export default function HomePage() {
             <div
                 className="max-w-[1280px] px-[40px] max-[650px]:px-[16px] items-center pt-[80px] pb-[80px] mx-auto flex gap-[20px] max-[730px]:flex-col">
                 <div
-                    className="flex flex-col flex-[0_1_50%] max-[820px]:flex-1 max-[730px]:items-start max-[730px]:justify-start max-[730px]:w-full">
+                    className="flex flex-col flex-[0_1_50%] max-[820px]:flex-1 items-start max-[730px]:justify-start max-[730px]:w-full">
                     <div className="relative">
                         <h2 className=" after:content[''] after:absolute after:bottom-[32px] rounded-full after:left-0 after:w-[100px] after:h-[4px] after:bg-[#FFCA1D] font-semibold max-w-[350px] text-[32px] mb-[52px]">
                             {`We've built strong relationships in over 11 years of work`}
@@ -173,7 +174,7 @@ export default function HomePage() {
                         businesses – from small businesses to large corporations – in
                         becoming long-term profitable.
                     </p>
-                    <Link href={'/'} className={'max-[820px]:w-full'}>
+                    <Link href={'/about-us'} className={'max-[820px]:w-full'}>
                         <button
                             className=" max-[820px]:w-full hover:bg-[#EEB700] transition-all duration-[.3s] mt-[20px] rounded w-[116px] text-[15px] pt-[10px] pb-[10px] font-semibold bg-[#FFCA1D]">
                             Learn more

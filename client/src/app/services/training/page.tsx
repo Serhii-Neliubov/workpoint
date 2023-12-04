@@ -65,7 +65,7 @@ const TrainingPage = () => {
             </div>
             <div className={'max-w-[1280px] px-[40px] max-[650px]:px-[16px] w-full mx-auto my-[80px]'}>
                 <div className={'grid grid-cols-3 max-[940px]:grid-cols-1 gap-[24px] mb-[80px]'}>
-                    <div className={'flex flex-col transition-all p-[48px] rounded-lg border border-solid border-[#DCDCE2] hover:border-[#FFCA1D] hover:border-4 hover:cursor-pointer hover:p-[45px]'}>
+                    <div className={'flex flex-col transition-all p-[48px] rounded-lg border border-solid border-[#DCDCE2] hover:outline hover:outline-[#FFCA1D] hover:outline-[4px] hover:cursor-pointer '}>
                         <div className="relative mb-[24px] pb-[12px]">
                             <span
                                 className="text-[22px] leading-[130%] text-[#00173A] after:content[''] after:absolute after:bottom-[0px] after:rounded-full after:left-0 after:w-[100px] after:h-[4px] after:bg-[#FFCA1D] font-semibold  ">
@@ -82,7 +82,7 @@ const TrainingPage = () => {
                             </button>
                         </Link>
                     </div>
-                    <div className={'flex flex-col transition-all p-[48px] rounded-lg border border-solid border-[#DCDCE2] hover:border-[#FFCA1D] hover:border-4 hover:cursor-pointer hover:p-[45px]'}>
+                    <div className={'flex flex-col transition-all p-[48px] rounded-lg border border-solid border-[#DCDCE2] hover:outline hover:outline-[#FFCA1D] hover:outline-[4px] hover:cursor-pointer '}>
                         <div className="relative mb-[24px] pb-[12px]">
                             <span
                                 className="text-[22px] leading-[130%] text-[#00173A] after:content[''] after:absolute after:bottom-[0px] after:rounded-full after:left-0 after:w-[100px] after:h-[4px] after:bg-[#FFCA1D] font-semibold  ">
@@ -99,7 +99,7 @@ const TrainingPage = () => {
                             </button>
                         </Link>
                     </div>
-                    <div className={'flex flex-col transition-all p-[48px] rounded-lg border border-solid border-[#DCDCE2] hover:border-[#FFCA1D] hover:border-4 hover:cursor-pointer hover:p-[45px]'}>
+                    <div className={'flex flex-col transition-all p-[48px] rounded-lg border border-solid border-[#DCDCE2] hover:outline hover:outline-[#FFCA1D] hover:outline-[4px] hover:cursor-pointer '}>
                         <div className="relative mb-[24px] pb-[12px]">
                             <span
                                 className="text-[22px] leading-[130%] text-[#00173A] after:content[''] after:absolute after:bottom-[0px] after:rounded-full after:left-0 after:w-[100px] after:h-[4px] after:bg-[#FFCA1D] font-semibold  ">
